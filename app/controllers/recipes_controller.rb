@@ -2,7 +2,9 @@ class RecipesController < ApplicationController
   before_action :find_recipe, only:[:show, :edit, :update, :destroy]
 
   def index
-    @recipes = Recipe.all
+    @recipes = Recipe.order(id: :desc)
+    @recipes = Recipe.where('title like ?', "%#{params[:keyword]}%").order(id: :desc) if params[:keyword]
+ 
   end
 
   def new

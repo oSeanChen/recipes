@@ -1,2 +1,19 @@
-<h1>Cooking World</h1>
-<%= link_to "Go to Recipe", recipes_path %>
+<section class="bg-gray-50">
+  <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+    <div class="mx-auto max-w-xl text-center">
+      <h1 class="text-3xl font-extrabold sm:text-5xl">
+        Cooking World
+        <strong class="font-extrabold text-blue-700 sm:block">
+          Bring delicious to everything!
+        </strong>
+      </h1>
+      <p class="mt-4 sm:text-xl sm:leading-relaxed">
+        Press button below, create your recipe.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <%= link_to "Go to Recipe", recipes_path,  class:"block w-full rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-indigo-700 focus:outline-none focus:ring active:bg-indigo-500 sm:w-auto"%>
+      </div>
+    </div>
+  </div>
+</section>
+<%= %>
