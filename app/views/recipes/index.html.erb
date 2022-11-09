@@ -1,0 +1,18 @@
+<h1>Recipes</h1>
+<table>
+  <tr>
+    <td>Title</td>
+    <td>Portion</td>
+    <td>Time</td>
+    <td>Content</td>
+  </tr>
+  <% @recipes.each do |recipe| %>
+    <tr>
+      <td><%= recipe.title %> </td>
+      <td><%= recipe.portion  %> </td>
+      <td><%= recipe.time %> </td>
+      <td><%= recipe.content  %> </td>
+    </tr>
+  <% end %>
+</table>
+<%= link_to "Create Recipe", new_recipe_path %>
