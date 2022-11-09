@@ -1,5 +1,21 @@
-<h1><%= @recipe.title %></h1>
-<h2>Serving: <%= @recipe.portion %></h2>
-<h2>Total Time: <%= @recipe.time %></h2>
-<h2>Ingredient:<%= @recipe.ingredient %></h2>
-<h2>Content:<%= @recipe.content %></h2>
+<h2 class="text-5xl text-center mb-6"><%= @recipe.title%></h2>
+<div class="flex flex-col items-center">
+  <div class="mb-3 xl:w-96">
+    <div class="mb-5">
+      <h2 class= "form-label inline-block mb-2 text-gray-700">Serving</h2>
+      <p class= "form-control block w-full px-3 py-1.5 text-gray-700 bg-white border border-solid border-gray-300 rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"><%= @recipe.portion  %></p>
+    </div>
+    <div class="mb-5">
+      <h2 class= "form-label inline-block mb-2 text-gray-700">Time</h2>
+      <p class= "form-control block w-full px-3 py-1.5 text-gray-700 bg-white border border-solid border-gray-300 rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"><%= @recipe.time  %></p>
+    </div>
+    <div class="mb-5">
+      <h2 class= "form-label inline-block mb-2 text-gray-700">Ingredient</h2>
+      <p class= "form-control block w-full px-3 py-1.5 text-gray-700 bg-white border border-solid border-gray-300 rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"><%= @recipe.ingredient  %></p>
+    </div>
+    <div class="mb-5">
+      <h2 class= "form-label inline-block mb-2 text-gray-700">Content</h2>
+      <p class= "form-control block w-full px-3 py-1.5 text-gray-700 bg-white border border-solid border-gray-300 rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"><%= @recipe.content  %></p>
+    </div>
+  </div>
+</div>

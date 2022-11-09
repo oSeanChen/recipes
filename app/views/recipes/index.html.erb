@@ -39,7 +39,7 @@
             </div>
           </td>
           <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-            <%= recipe.title %>
+            <%= link_to "#{recipe.title}", recipe_path(recipe) %>
           </th>
           <td class="py-4 px-6">
             <%= recipe.portion %>
