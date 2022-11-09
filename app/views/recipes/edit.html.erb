@@ -1,0 +1,20 @@
+<h1>Edit recipe</h1>
+<%= form_with model: @recipe do |form| %>
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.label :portion %>
+    <%= form.number_field :portion %> person
+  </div>
+  <div>
+    <%= form.label :time %>
+    <%= form.number_field :time %> minutes
+  </div>
+  <div>
+    <%= form.label :content %>
+    <%= form.text_area :content %>
+  </div>
+  <%= form.submit "Submit" %>
+<% end %>
