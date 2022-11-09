@@ -1,5 +1,3 @@
-# README
-
 ## Recipe Project
 
 - Rails version
@@ -12,5 +10,4 @@
 - Getting start
   `bundle`
   `rails server`
-
-- ...
+  `bin/webpack-dev-server`
